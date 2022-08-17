@@ -1,0 +1,239 @@
+body
+{
+    width: 1440px;
+    height: 1024px;
+    background-color: #F3F5FC;
+}
+
+h1 img
+{
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.mainTextField{
+    
+    position: relative;
+    top: 168px;
+    left: 240px;
+    width: 680px;
+    height: 500px;
+
+    resize: none;
+    background: none;
+    border: none;
+    line-height: 48px;
+    font-size: 32px;
+    color: #0A3871;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: lowercase;
+
+}
+
+.mainTextField::placeholder {
+
+    font-style: italic;
+    color: #2a4a70;
+    text-transform: none;
+}
+
+
+
+.mensajeresultado
+{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    bottom: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.figura
+{
+    position: relative;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 243px;
+}
+
+h2
+{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    left: 32px;
+    top: 579px;
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.sinmensaje p
+{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    left: 32px;
+    top: 653px;
+
+    width: 336px;
+    height: 48px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mostrarresultado
+{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 32px;
+    top: 32px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: left;
+    text-transform: lowercase;
+    border: none;
+    resize: none;
+    background: none;
+    color: #495057;
+}
+
+.copiartexto
+{
+    box-sizing: border-box;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    bottom: 32px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+
+svg
+{
+    padding-right: 8px;
+}
+
+.infoespecial
+{
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+    padding: 0px;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.contenedorbotones
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.encriptar
+{
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    
+    
+}
+
+.desencriptar{
+
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0A3871;
+}
