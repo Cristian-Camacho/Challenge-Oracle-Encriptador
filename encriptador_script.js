@@ -1,7 +1,5 @@
 function Encriptar() 
 {
-    var textoIngresado = document.getElementById("textArea");
-
     if(textoIngresado.value != "")
     {
         var text = textoIngresado.value;
@@ -43,8 +41,6 @@ function Encriptar()
 
 function Desencriptar() 
 {
-    var textoIngresado = document.getElementById("textArea");
-
     if(textoIngresado.value != "")
     {
         var text = textoIngresado.value;
@@ -106,16 +102,29 @@ function CopiarTexto()
     document.execCommand('copy');
 }
 
+function RevisarTextoEspecial()
+{
+    var tempText = textoIngresado.value.replace(/[^0-9A-Za-z ]+/g, '');
+    textoIngresado.value = tempText;
+}
+
+function SeleccionarTextoIngresado()
+{
+    textoIngresado.select();
+}
+
 var contenedorConResultado = document.getElementById("textoresultado");
 var contenedorSinResultado = document.querySelector(".sinmensaje");
 var textoResultante = document.querySelector(".mostrarresultado");
-
+var textoIngresado = document.getElementById("textArea");
 var botonEncriptar = document.getElementById("encriptar");
 var botonDesencriptar = document.getElementById("desencriptar");
 var botonCopiar = document.getElementById("copiar");
 
-contenedorConResultado.style.display = "none";
 
+contenedorConResultado.style.display = "none";
+textoIngresado.oninput = RevisarTextoEspecial;
+textoIngresado.onfocus = SeleccionarTextoIngresado;
 botonEncriptar.onclick = Encriptar;
 botonDesencriptar.onclick = Desencriptar;
 botonCopiar.onclick = CopiarTexto;
